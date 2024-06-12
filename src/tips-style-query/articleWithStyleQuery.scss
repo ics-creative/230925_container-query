@@ -1,0 +1,62 @@
+@use "../mixins" as mixins;
+
+.articleWithStyleQuery {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  border-radius: 8px;
+  color: #404040;
+
+
+  @container (width <= 640px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 16px;
+
+    --badgeWithStyleQuery-is-small: true;
+    --titleWithStyleQuery-is-small: true;
+  }
+
+  &_wrapper {
+    container-type: inline-size;
+  }
+
+  &_side {
+    width: 204px;
+    display: grid;
+    place-content: flex-start;
+    place-items: center;
+    gap: 16px;
+    grid-template-columns: auto auto;
+  }
+}
+
+.timestamp {
+  font-size: 1rem;
+  @container style(--badgeWithStyleQuery-is-small) {
+    font-size: 0.875rem;
+    color: #8d0000;
+  }
+}
+
+.badge {
+  @include mixins.badge;
+
+  font-size: 0.875rem;
+
+  @container style(--badgeWithStyleQuery-is-small) {
+    font-size: 0.75rem;
+    background-color: #8d0000;
+    color: #fff;
+  }
+}
+
+.title {
+  @include mixins.title;
+
+  display: block;
+
+  @container style(--titleWithStyleQuery-is-small) {
+    font-size: 1rem;
+  }
+}

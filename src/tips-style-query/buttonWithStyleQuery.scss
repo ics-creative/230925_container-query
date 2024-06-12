@@ -1,0 +1,39 @@
+.buttonSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  place-content: center;
+
+  &_item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.buttonWithStyleQuery {
+  background-color: #EBE9FC;
+  color: #3223B3;
+  border-radius: 24px;
+  padding: 12px 24px;
+  overflow-wrap: anywhere;
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 160px;
+
+  @container style(--secondary) {
+    background-color: #3223B3;
+    color: #fff;
+  }
+
+  &_wrapper {
+    container-type: inline-size;
+  }
+
+  &_item {
+    display: block;
+  }
+}

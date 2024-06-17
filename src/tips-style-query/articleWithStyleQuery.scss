@@ -4,13 +4,13 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 32px;
-  border-radius: 8px;
   color: #404040;
+  border-radius: 8px;
 
 
   @container (width <= 640px) {
-    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
     gap: 16px;
 
     --badgeWithStyleQuery-is-small: true;
@@ -22,17 +22,18 @@
   }
 
   &_side {
-    width: 204px;
     display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
     place-content: flex-start;
     place-items: center;
-    gap: 16px;
-    grid-template-columns: auto auto;
+    width: 204px;
   }
 }
 
 .timestamp {
   font-size: 1rem;
+
   @container style(--badgeWithStyleQuery-is-small) {
     font-size: 0.875rem;
     color: #8d0000;
@@ -46,8 +47,8 @@
 
   @container style(--badgeWithStyleQuery-is-small) {
     font-size: 0.75rem;
-    background-color: #8d0000;
     color: #fff;
+    background-color: #8d0000;
   }
 }
 

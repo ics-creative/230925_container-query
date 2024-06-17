@@ -1,37 +1,37 @@
 @mixin title {
   display: block;
-  line-height: 1.5;
   font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 @mixin badge {
-  background: #7C71F6;
-  color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  justify-content: center;
   padding: 4px 8px;
+  color: #fff;
+  background: #7C71F6;
+  border-radius: 8px;
 }
 
 @mixin article {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 32px;
-  border-radius: 8px;
   color: #404040;
+  border-radius: 8px;
 
   &_wrapper {
     container-type: inline-size;
   }
 
   &_side {
-    width: 204px;
     display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
     place-content: flex-start;
     place-items: center;
-    gap: 16px;
-    grid-template-columns: auto auto;
+    width: 204px;
   }
 
   &_timestamp {
@@ -55,9 +55,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  border-radius: 16px;
-  background: #FFF;
   padding: 54px;
+  background: #FFF;
+  border-radius: 16px;
 
   &_wrapper {
     container-type: inline-size;

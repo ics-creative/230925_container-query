@@ -10,8 +10,8 @@
   @include mixins.article;
 
   @container (width <= 640px) {
-    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 }

@@ -4,14 +4,14 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: clamp(16px, 24 / 960 * 100cqi, 24px);
-  border-radius: 16px;
   padding: clamp(24px, 40 / 960 * 100cqi, 40 / 960 * 100cqi);
-  background: #FFF;
   font-size: clamp(0.875rem, 16 / 960 * 100cqi, 16 / 960 * 100cqi);
+  background: #FFF;
+  border-radius: 16px;
 
   @container (width <= 640px) {
-    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
@@ -20,12 +20,12 @@
   }
 
   &_side {
-    width: clamp(180px, 210 / 960 * 100cqi, 210 / 960 * 100cqi);
     display: grid;
+    grid-template-columns: auto auto;
+    gap: clamp(16px, 16 / 960 * 100cqi, 16 / 960 * 100cqi);
     place-content: flex-start;
     place-items: center;
-    gap: clamp(16px, 16 / 960 * 100cqi, 16 / 960 * 100cqi);
-    grid-template-columns: auto auto;
+    width: clamp(180px, 210 / 960 * 100cqi, 210 / 960 * 100cqi);
   }
 
   &_badge {
@@ -36,7 +36,7 @@
 
   &_title {
     display: block;
-    line-height: 1.5;
     font-size: clamp(1rem, 18 / 960 * 100cqi, 18 / 960 * 100cqi);
+    line-height: 1.5;
   }
 }

@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 ul, li {
@@ -14,10 +14,10 @@ html {
 
 body {
   min-height: 100%;
-  color: #444;
   padding: 80px 16px 16px;
-  container: my-container / inline-size;
+  color: #444;
   background: #F3F4F4;
+  container: my-container / inline-size;
 }
 
 a {
@@ -35,11 +35,11 @@ button {
 }
 
 .heading {
-  font-size: 2rem;
-  font-weight: bold;
   width: 100%;
   max-width: 960px;
   margin: 0 auto 32px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .button {
@@ -51,22 +51,22 @@ button {
   padding: 0 16px;
   font-family: sans-serif;
   font-size: 16px;
+  line-height: 1;
   color: #fff;
   text-align: center;
   overflow-wrap: anywhere;
   background-color: #444;
   border-radius: 24px;
-  line-height: 1;
 }
 
 .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
   width: 100%;
   max-width: 960px;
   margin: 0 auto 120px;
   overflow: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
 
   &_main {
     width: 100%;
@@ -78,9 +78,9 @@ button {
 
 .sectionTitle {
   &_item {
+    margin-top: -4px;
     font-size: 3rem;
     font-weight: bold;
-    margin-top: -4px;
     color: #404040;
   }
 }
@@ -97,7 +97,7 @@ button {
 }
 
 .oneColumnLayout {
-  border-radius: 16px;
-  background: #FFF;
   padding: 40px;
+  background: #FFF;
+  border-radius: 16px;
 }

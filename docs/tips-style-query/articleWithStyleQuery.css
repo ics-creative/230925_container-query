@@ -2,13 +2,13 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 32px;
-  border-radius: 8px;
   color: #404040;
+  border-radius: 8px;
 }
 @container (width <= 640px) {
   .articleWithStyleQuery {
-    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
     gap: 16px;
     --badgeWithStyleQuery-is-small: true;
     --titleWithStyleQuery-is-small: true;
@@ -18,12 +18,12 @@
   container-type: inline-size;
 }
 .articleWithStyleQuery_side {
-  width: 204px;
   display: grid;
+  grid-template-columns: auto auto;
+  gap: 16px;
   place-content: flex-start;
   place-items: center;
-  gap: 16px;
-  grid-template-columns: auto auto;
+  width: 204px;
 }
 
 .timestamp {
@@ -37,27 +37,27 @@
 }
 
 .badge {
-  background: #7C71F6;
-  color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  justify-content: center;
   padding: 4px 8px;
+  color: #fff;
+  background: #7C71F6;
+  border-radius: 8px;
   font-size: 0.875rem;
 }
 @container style(--badgeWithStyleQuery-is-small) {
   .badge {
     font-size: 0.75rem;
-    background-color: #8d0000;
     color: #fff;
+    background-color: #8d0000;
   }
 }
 
 .title {
   display: block;
-  line-height: 1.5;
   font-size: 1.125rem;
+  line-height: 1.5;
   display: block;
 }
 @container style(--titleWithStyleQuery-is-small) {

@@ -19,7 +19,6 @@ containers.forEach((container) => {
   updateValueVariable(container, inputElement.value);
 
   inputElement.addEventListener("input", (event) => {
-    console.log(event.target.value);
     updateValueDisplay(valueDisplay, event.target.value);
     updateValueVariable(container, event.target.value);
   });

@@ -13,8 +13,9 @@
     grid-template-columns: 1fr;
     gap: 16px;
 
-    --badgeWithStyleQuery-is-small: true;
-    --titleWithStyleQuery-is-small: true;
+    --timestamp-is-small: true;
+    --badge-is-small: true;
+    --title-is-small: true;
   }
 
   &_wrapper {
@@ -34,7 +35,7 @@
 .timestamp {
   font-size: 1rem;
 
-  @container style(--badgeWithStyleQuery-is-small) {
+  @container style(--timestamp-is-small) {
     font-size: 0.875rem;
     color: #8d0000;
   }
@@ -45,7 +46,7 @@
 
   font-size: 0.875rem;
 
-  @container style(--badgeWithStyleQuery-is-small) {
+  @container style(--badge-is-small) {
     font-size: 0.75rem;
     color: #fff;
     background-color: #8d0000;
@@ -57,7 +58,7 @@
 
   display: block;
 
-  @container style(--titleWithStyleQuery-is-small) {
+  @container style(--title-is-small) {
     font-size: 1rem;
   }
 }

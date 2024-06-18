@@ -10,8 +10,9 @@
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
     gap: 16px;
-    --badgeWithStyleQuery-is-small: true;
-    --titleWithStyleQuery-is-small: true;
+    --timestamp-is-small: true;
+    --badge-is-small: true;
+    --title-is-small: true;
   }
 }
 .articleWithStyleQuery_wrapper {
@@ -29,7 +30,7 @@
 .timestamp {
   font-size: 1rem;
 }
-@container style(--badgeWithStyleQuery-is-small) {
+@container style(--timestamp-is-small) {
   .timestamp {
     font-size: 0.875rem;
     color: #8d0000;
@@ -46,7 +47,7 @@
   border-radius: 8px;
   font-size: 0.875rem;
 }
-@container style(--badgeWithStyleQuery-is-small) {
+@container style(--badge-is-small) {
   .badge {
     font-size: 0.75rem;
     color: #fff;
@@ -60,7 +61,7 @@
   line-height: 1.5;
   display: block;
 }
-@container style(--titleWithStyleQuery-is-small) {
+@container style(--title-is-small) {
   .title {
     font-size: 1rem;
   }

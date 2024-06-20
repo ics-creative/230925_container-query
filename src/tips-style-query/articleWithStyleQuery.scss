@@ -35,7 +35,7 @@
 .timestamp {
   font-size: 1rem;
 
-  @container style(--timestamp-is-small) {
+  @container style(--timestamp-is-small: true) {
     font-size: 0.875rem;
     color: #8d0000;
   }
@@ -46,7 +46,7 @@
 
   font-size: 0.875rem;
 
-  @container style(--badge-is-small) {
+  @container style(--badge-is-small: true) {
     font-size: 0.75rem;
     color: #fff;
     background-color: #8d0000;
@@ -58,7 +58,8 @@
 
   display: block;
 
-  @container style(--title-is-small) {
+  @container style(--title-is-small: true) {
     font-size: 1rem;
+    color: #8d0000;
   }
 }

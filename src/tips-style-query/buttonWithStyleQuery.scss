@@ -24,7 +24,7 @@
   background-color: #EBE9FC;
   border-radius: 24px;
 
-  @container style(--secondary) {
+  @container style(--secondary: true) {
     color: #fff;
     background-color: #3223B3;
   }

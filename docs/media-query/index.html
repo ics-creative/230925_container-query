@@ -9,15 +9,8 @@
 </head>
 <body>
   <p class="heading">メディアクエリー：横並びのパーツ</p>
-  <div class="container js-container">
-    <label class="range">
-      <span>
-        コンテンツの最大幅: <span class="js-range-valueDisplay"></span>
-      </span>
-      <input class="range_value js-range-value" type="range" name="size" min="320" max="960" value="960">
-    </label>
-
-    <div class="container_main js-container-main">
+  <div class="container">
+    <div class="container_main">
       <div class="oneColumnLayout">
         <ul class="articleUnit">
           <li class="articleWithMediaQuery_wrapper">
@@ -39,15 +32,8 @@
   </div>
 
   <p class="heading" id="change-layout">メディアクエリー：2カラムのレイアウトに配置</p>
-  <div class="container js-container">
-    <label class="range">
-      <span>
-        コンテンツの最大幅: <span class="js-range-valueDisplay"></span>
-      </span>
-      <input class="range_value js-range-value" type="range" name="size" min="320" max="960" value="960">
-    </label>
-
-    <div class="container_main js-container-main">
+  <div class="container">
+    <div class="container_main">
       <div class="splitLayoutWithMediaQuery">
         <div class="sectionTitle">
           <p class="sectionTitle_item">ニュース</p>
@@ -99,7 +85,5 @@
       </div>
     </div>
   </div>
-
-  <script src="../common/common.js"></script>
 </body>
 </html>

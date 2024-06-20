@@ -1,5 +1,11 @@
 @use "../mixins" as mixins;
 
+.articleUnit {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
 .articleWithMediaQuery {
   @include mixins.article;
 

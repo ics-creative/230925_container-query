@@ -48,21 +48,3 @@
     gap: 16px;
   }
 }
-
-.splitLayout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  padding: 54px;
-  background: #FFF;
-  border-radius: 16px;
-}
-.splitLayout_wrapper {
-  container-type: inline-size;
-}
-@container (width <= 768px) {
-  .splitLayout {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}

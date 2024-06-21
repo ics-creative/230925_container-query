@@ -102,3 +102,21 @@ button {
   background: #FFF;
   border-radius: 16px;
 }
+
+.splitLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 54px;
+  background: #FFF;
+  border-radius: 16px;
+
+  &_wrapper {
+    container-type: inline-size;
+  }
+
+  @container (width <= 768px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

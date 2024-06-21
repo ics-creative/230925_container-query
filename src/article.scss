@@ -1,4 +1,4 @@
-@use "../mixins" as mixins;
+@use "mixins" as mixins;
 
 .articleUnit {
   display: grid;
@@ -13,14 +13,5 @@
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
     gap: 16px;
-  }
-}
-
-.splitLayout {
-  @include mixins.splitLayout();
-
-  @container (width <= 768px) {
-    grid-template-columns: 1fr;
-    gap: 40px;
   }
 }
